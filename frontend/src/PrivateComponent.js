@@ -17,7 +17,7 @@ const PrivateComponent = () => {
 
     onLoad();
   }, []);
-  console.log(isLoggedIn)
+  console.log(isLoggedIn);
   if (isLoggedIn) {
     API.get("private", "/private")
       .then((result) => {
